@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="js/view.js"></script>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 30%;
+            margin-left: 30%;
+            margin-top:10%;
+        }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+        .container {
+            padding: 2px 16px;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-bottom: 20px"></div>
+    <div class="card">
+        <form class="form">
+        <input type="hidden" id="id" />
+        <h1 id="companyname" style="margin-left: 5%"; padding-top:15px> </h1>
+        <div class="container">
+            <h2 id="stockname"></h2>
+            <h4 id="price">Price:</h4>
+            <input type="number" id="quantity" style="margin-bottom: 15px; width:15%" min="1" />
+            <div class="form-group">
+                <input class="btn btn-primary" id ="buystock" value="Buy  now"type="button" onclick="buyStock()" 
+                       style="width:15%"
+                       />
+            </div>
+            
+        </div>
+    </form>
+    </div>
+</body>
+</html>

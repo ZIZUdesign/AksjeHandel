@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+    <title></title>
+</head>
+<body style="background-color:cornflowerblue">
+
+    <div class="card" style="width: 38rem; margin-top:50px; margin-left:25%; background-color:antiquewhite">
+        <div class="container" style="align-items:baseline">
+            <div class="card-body">
+                <h5 class="card-title">REGISTER HER </h5>
+                <form>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="username" class="form-control" onchange="validateUsername(this.value)" />
+                        <div>
+                            <span id="feilBrukernavn" style="color: red"></span>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm password</label>
+                        <input type="password" id="confirmpassword" class="form-control" />
+                    </div>
+                    <div class="form-group" style="margin-top:10px">
+                        <button type="button" class="btn btn-primary" style="width: 34rem; margin-left:3px" onclick="registerUser()">SUBMIT</button>
+                    </div>
+                    <div>
+                        <span id="feil" style="color: red"></span>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
